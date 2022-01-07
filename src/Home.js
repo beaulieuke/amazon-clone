@@ -19,7 +19,7 @@ function Home() {
                     rating={4}
                     />
                     <Product title="Amazon Basics Classic Office Desk Computer Chair - Adjustable, Swiveling, Ultra-Soft Microfiber - Light Beige, Lumbar Support " 
-                    price={123.00} 
+                    price={119.98} 
                     image="https://m.media-amazon.com/images/I/81W4y81I14L._AC_SL1500_.jpg"
                     rating={5}
                     />
