@@ -42,10 +42,25 @@ function Home() {
                     image="https://m.media-amazon.com/images/I/61tECQhnTeL._SX3000_.jpg"
                     rating={3}
                     />
+                    <Product title="Amazon Basics Dual-Port USB Car Charger Adapter for Apple and Android Devices, 4.8 Amp, 24W, Black" 
+                    price={29.99} 
+                    image="https://m.media-amazon.com/images/I/61tECQhnTeL._SX3000_.jpg"
+                    rating={3}
+                    />
 
                 </div>
 
                 <div className="home__row">
+                    <Product title="Amazon Basics Dual-Port USB Car Charger Adapter for Apple and Android Devices, 4.8 Amp, 24W, Black" 
+                    price={29.99} 
+                    image="https://m.media-amazon.com/images/I/61tECQhnTeL._SX3000_.jpg"
+                    rating={3}
+                    />
+                    <Product title="Amazon Basics Dual-Port USB Car Charger Adapter for Apple and Android Devices, 4.8 Amp, 24W, Black" 
+                    price={29.99} 
+                    image="https://m.media-amazon.com/images/I/61tECQhnTeL._SX3000_.jpg"
+                    rating={3}
+                    />
                     <Product title="Amazon Basics Dual-Port USB Car Charger Adapter for Apple and Android Devices, 4.8 Amp, 24W, Black" 
                     price={29.99} 
                     image="https://m.media-amazon.com/images/I/61tECQhnTeL._SX3000_.jpg"
