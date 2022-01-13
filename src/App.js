@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "./App.css";
 import Header from "./Header";
 import Home from "./Home";
-import { BrowserRouter as Router, Switch, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Checkout from "./Checkout";
 import Login from "./Login";
 import Payment from "./Payment";
@@ -46,11 +46,11 @@ function App() {
     <Router>
       <div className="app">
         <Routes>
-          <Route path="/orders" element={< Header />, < Orders />} />
+          <Route path="/orders" element={[< Header />, < Orders />]} />
           <Route path="/login" element={< Login />} />
-          <Route path="/checkout" element={< Header />, < Checkout />} />
-          <Route path="/payment" stripe={promise} element={< Header />} />
-          <Route path="/" element={< Header />, < Home />} />
+          <Route path="/checkout" element={[< Header />, < Checkout />]} />
+          <Route path="/payment" stripe={promise} element={ < Payment />} />
+          <Route path="/" element={[< Header />, < Home />]} />
         </Routes>
       </div>
     </Router>
