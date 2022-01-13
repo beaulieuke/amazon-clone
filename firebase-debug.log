@@ -1,0 +1,37 @@
+[debug] [2022-01-12T20:37:08.045Z] ----------------------------------------------------------------------
+[debug] [2022-01-12T20:37:08.046Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2022-01-12T20:37:08.046Z] CLI Version:   10.0.1
+[debug] [2022-01-12T20:37:08.046Z] Platform:      darwin
+[debug] [2022-01-12T20:37:08.046Z] Node Version:  v17.3.0
+[debug] [2022-01-12T20:37:08.047Z] Time:          Wed Jan 12 2022 15:37:08 GMT-0500 (Eastern Standard Time)
+[debug] [2022-01-12T20:37:08.047Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-01-12T20:37:08.072Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-01-12T20:37:08.072Z] > authorizing via signed-in user (beaulieuke@gmail.com)
+[debug] [2022-01-12T20:37:08.072Z] [iam] checking project clone-ed309 for permissions ["firebase.projects.get"]
+[debug] [2022-01-12T20:37:08.073Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-ed309:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2022-01-12T20:37:08.708Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 12 Jan 2022 20:37:08 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=134","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-12T20:37:08.711Z] > refreshing access token with scopes: []
+[debug] [2022-01-12T20:37:08.712Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-01-12T20:37:09.226Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","date":"Wed, 12 Jan 2022 20:37:09 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-12T20:37:09.274Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-ed309 [none]
+[debug] [2022-01-12T20:37:09.897Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-ed309 200
+[debug] [2022-01-12T20:37:09.897Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-ed309 {"projectId":"clone-ed309","projectNumber":"46468449389","displayName":"amazon-clone","name":"projects/clone-ed309","resources":{"hostingSite":"clone-ed309"},"state":"ACTIVE"}
+[info] 
+[info] === Serving from '/Users/kevinbeaulieu/amazon-clone'...
+[info] 
+[debug] [2022-01-12T20:37:09.899Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-ed309/sites 
+[debug] [2022-01-12T20:37:10.567Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-ed309/sites 200
+[debug] [2022-01-12T20:37:10.568Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-ed309/sites {"sites":[{"name":"projects/46468449389/sites/clone-ed309","defaultUrl":"https://clone-ed309.web.app","appId":"1:46468449389:web:b5def47247bc62e7cdab64","type":"DEFAULT_SITE"}]}
+[debug] [2022-01-12T20:37:10.568Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-ed309/webApps/1:46468449389:web:b5def47247bc62e7cdab64/config [none]
+[debug] [2022-01-12T20:37:11.251Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-ed309/webApps/1:46468449389:web:b5def47247bc62e7cdab64/config 200
+[debug] [2022-01-12T20:37:11.251Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-ed309/webApps/1:46468449389:web:b5def47247bc62e7cdab64/config {"projectId":"clone-ed309","appId":"1:46468449389:web:b5def47247bc62e7cdab64","storageBucket":"clone-ed309.appspot.com","apiKey":"AIzaSyBpTHS6vV51rgUheubViCza-zxcuvvyuHQ","authDomain":"clone-ed309.firebaseapp.com","messagingSenderId":"46468449389","measurementId":"G-PDF526D20Q"}
+[info] i  hosting: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] ✔  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  hosting: 127.0.0.1 - - [12/Jan/2022:20:37:18 +0000] "GET / HTTP/1.1" 200 644 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:95.0) Gecko/20100101 Firefox/95.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [12/Jan/2022:20:37:18 +0000] \"GET / HTTP/1.1\" 200 644 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:95.0) Gecko/20100101 Firefox/95.0\""}}
+[info] i  hosting: 127.0.0.1 - - [12/Jan/2022:20:37:18 +0000] "GET /static/css/main.8b048560.css HTTP/1.1" 200 4855 "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:95.0) Gecko/20100101 Firefox/95.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [12/Jan/2022:20:37:18 +0000] \"GET /static/css/main.8b048560.css HTTP/1.1\" 200 4855 \"http://localhost:5000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:95.0) Gecko/20100101 Firefox/95.0\""}}
+[info] i  hosting: 127.0.0.1 - - [12/Jan/2022:20:37:18 +0000] "GET /static/js/main.34cd8cd1.js HTTP/1.1" 200 1186153 "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:95.0) Gecko/20100101 Firefox/95.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [12/Jan/2022:20:37:18 +0000] \"GET /static/js/main.34cd8cd1.js HTTP/1.1\" 200 1186153 \"http://localhost:5000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:95.0) Gecko/20100101 Firefox/95.0\""}}
+[info] i  hosting: 127.0.0.1 - - [12/Jan/2022:20:37:19 +0000] "GET /logo192.png HTTP/1.1" 200 5347 "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:95.0) Gecko/20100101 Firefox/95.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [12/Jan/2022:20:37:19 +0000] \"GET /logo192.png HTTP/1.1\" 200 5347 \"http://localhost:5000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:95.0) Gecko/20100101 Firefox/95.0\""}}
+[info] i  hosting: 127.0.0.1 - - [12/Jan/2022:20:37:19 +0000] "GET /favicon.ico HTTP/1.1" 200 3870 "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:95.0) Gecko/20100101 Firefox/95.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [12/Jan/2022:20:37:19 +0000] \"GET /favicon.ico HTTP/1.1\" 200 3870 \"http://localhost:5000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:95.0) Gecko/20100101 Firefox/95.0\""}}
